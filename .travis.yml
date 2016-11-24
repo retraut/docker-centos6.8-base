@@ -3,7 +3,7 @@ services:
 before_install:
 - docker build -t retraut/docker-centos6.8-base .
 install:
-- docker run -d  base retraut/docker-centos6.8-base:latest
+- docker run -d --name base retraut/docker-centos6.8-base:latest
 script:
 - docker ps | grep -q base
 - docker exec base uptime
