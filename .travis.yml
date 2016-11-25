@@ -1,11 +1,12 @@
 services:
 - docker
 before_install:
-- docker build -t docker-centos6.8-base .
-- docker build -t docker-centos6.8-base:goss tests/.
+- docker build -t "${TRAVIS_BUILD_DIR}" .
+- docker build -t "${TRAVIS_BUILD_DIR}":goss tests/.
 
 install:
-- docker run -d --name base docker-centos6.8-base:goss
+- docker run -d --name "${TRAVIS_BUILD_DIR}" "${TRAVIS_BUILD_DIR}":goss
 script:
-- docker ps | grep -q base
+- docker ps | grep -q "${TRAVIS_BUILD_DIR}"
 - ./tests/goss.sh
+
