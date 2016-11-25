@@ -10,4 +10,4 @@ user:
 group:
   www:
     exists: true
-    gid: 2111
+    gid: 1111
