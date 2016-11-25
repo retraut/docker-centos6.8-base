@@ -8,5 +8,7 @@ install:
 - docker run -d --name base docker-centos6.8-base:goss
 script:
 - docker ps -a
+- sleep 10
+- docker ps -a 
 - docker ps | grep -q base
 - docker ps | grep healthy
