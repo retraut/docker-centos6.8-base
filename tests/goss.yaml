@@ -1,0 +1,13 @@
+user:
+  dev:
+    exists: true
+    uid: 1111
+    gid: 1111
+    groups:
+    - www
+    home: /home/dev
+    shell: /bin/bash
+group:
+  www:
+    exists: true
+    gid: 1111
