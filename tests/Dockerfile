@@ -1,4 +1,4 @@
-FROM docker-centos6.8-base
+FROM TRAVIS_BRANCH
 MAINTAINER retraut@gmail.com
 
 RUN curl -fsSL https://goss.rocks/install | sh
