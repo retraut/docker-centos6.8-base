@@ -12,3 +12,4 @@ script:
 - docker ps -a 
 - docker ps | grep -q base
 - docker ps | grep healthy
+- ./tests/goss.sh
