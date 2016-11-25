@@ -1,9 +1,11 @@
 services:
 - docker
 before_install:
-- docker build -t retraut/docker-centos6.8-base .
+- docker build -t docker-centos6.8-base .
+- docker build -t docker-centos6.8-base:goss tests/.
+
 install:
-- docker run -d --name base retraut/docker-centos6.8-base:latest
+- docker run -d --name base docker-centos6.8-base:goss
 script:
 - docker ps | grep -q base
-- docker exec base uptime
+- docker ps | grep healthy
