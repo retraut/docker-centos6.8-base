@@ -7,9 +7,5 @@ before_install:
 install:
 - docker run -d --name base docker-centos6.8-base:goss
 script:
-- docker ps -a
-- bash -c "sleep 10"
-- docker ps -a 
 - docker ps | grep -q base
-- docker ps | grep healthy
 - ./tests/goss.sh
