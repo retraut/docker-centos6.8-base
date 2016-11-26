@@ -4,13 +4,13 @@
 [![DockerStore](https://img.shields.io/badge/docker%20hub-link-green.svg)](https://store.docker.com/community/images/retraut/docker-centos6.8-base)
 [![Maintenance](https://img.shields.io/maintenance/yes/2016.svg)](https://github.com/retraut)
 
-# Featues
-Features:
+# Features
 
 - Updated image (at build time)
 - Based on original CentOS 6.8 Docker image
 
 # Links
+
 - Docker CentOS 6.8 original [Dockerfile](https://github.com/CentOS/sig-cloud-instance-images/blob/f32666d2af356ed6835942ed753a4970e18bca94/docker/Dockerfile)
 - DockerStore original CentOS [repository](https://store.docker.com/images/d5052416-4069-4619-8597-ba61df35ba6f?tab=description)
 
