@@ -1,8 +1,10 @@
 # Docker CentOS 6.8 base
 
-[![Travis](https://img.shields.io/travis/retraut/docker-centos6.8-base.svg?style=flat-square)](https://travis-ci.org/retraut/docker-centos6.8-base.svg?branch=master)
+[![Travis](https://img.shields.io/travis/retraut/docker-centos6.8-base.svg?style=flat-square)](https://travis-ci.org/retraut/docker-centos6.8-base)
 [![DockerStore](https://img.shields.io/badge/docker%20hub-link-green.svg?style=flat-square)](https://store.docker.com/community/images/retraut/docker-centos6.8-base)
 [![Maintenance](https://img.shields.io/maintenance/yes/2016.svg?style=flat-square)](https://github.com/retraut)
+[![Docker automated build](https://img.shields.io/docker/automated/retraut/docker-centos6.8-base.svg?style=flat-square)] (https://store.docker.com/community/images/retraut/docker-centos6.8-base)
+
 
 # Features
 
