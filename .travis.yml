@@ -3,16 +3,16 @@ env:
   global:
     - REPO: docker-centos6.8-base
     - VERSION: $TRAVIS_BRANCH
-
+    - NAME: $TRAVIS_JOB_ID
 sudo: required
 services:
 - docker
 before_install:
-- docker build -t ${TRAVIS_JOB_ID} .
-- docker build -t ${TRAVIS_JOB_ID}:goss tests/.
+- docker build -t ${NAME} .
+- docker build -t ${NAME}:goss tests/.
 
 install:
-- docker run -d --name ${REPO} ${TRAVIS_JOB_ID}:goss
+- docker run -d --name ${REPO} ${NAME}:goss
 script:
 - docker ps | grep -q ${REPO}
 - ./tests/goss.sh
