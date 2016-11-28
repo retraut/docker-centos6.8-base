@@ -1,4 +1,4 @@
-FROM TRAVIS_BRANCH
+FROM ${TRAVIS_JOB_ID}
 MAINTAINER retraut@gmail.com
 
 RUN curl -fsSL https://goss.rocks/install | sh
