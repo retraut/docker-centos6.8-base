@@ -20,10 +20,6 @@
 
 I have created it for some project.
 
-I created a user account **dev** with group **www** with the same uid and guid like in Docker host machine.
-
-This is needed to avoid a permission mess with files on Docker host machine and containers.
-
-^Need to fix with docker data container via [stackoverflow](http://stackoverflow.com/questions/23544282/what-is-the-best-way-to-manage-permissions-for-docker-shared-volumes/27021154#27021154)
+No support
 
 Feel free to use this image if you want.
